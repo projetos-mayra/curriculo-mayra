@@ -1,4 +1,88 @@
-.fundo nav{
-    background-color: #D8BFD8;
+/* GERAL */
 
+body {
+    font-family: 'Baloo Tamma 2','Manrope', cursive;
+    background-color:  RGB(218, 31%, 93%);
+} 
+
+::-webkit-scrollbar { width:8px; height: 10px; }  
+::-webkit-scrollbar-track { background:rgb(10, 230, 219); }   
+::-webkit-scrollbar-thumb { background: hsl(165, 86%, 47%); transition-duration: 0.8s; }
+
+a:hover { color: hsl(174, 84%, 52%); }
+
+
+/* CABEÇALHO */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#40E0D0,#48D1CC);
+    padding: 30px; 
 }
+
+/* CONTATO */
+#contato {
+    background-color: #40E0D0;
+    color: #E0FFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 20px;
+    margin: 0;
+    align-items: justify;
+}
+
+
+#contato a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 6px; 
+    width: 42%;    
+    color: #fff; 
+    line-height: .1;
+    margin: 0;/*2vh;*/
+    font-size: 1em;
+    text-align: justify; 
+}
+
+footer {
+    background-color: #48D1CC;
+    color: #e5e6e7; 
+}
+
+
+
+@media screen and (min-width: 768px) {
+    html { scroll-behavior: smooth; }
+    /* Cabeçalho */
+    nav {
+        height: 10vh;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    nav ul {
+        flex-direction: row;
+        width: 70%;
+    }
+    
+    /* Header */
+    header {
+        height: 110vh;
+        justify-content: center;
+    }
+    /* Contato */
+    #contato {
+        justify-content: space-around;   
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        padding: 0 auto;
+        max-height: 45vh;
+        margin: 0;         
+    }
+ 
+}
+ 
