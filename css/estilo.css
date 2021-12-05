@@ -1,8 +1,8 @@
-/* GERAL */
+
 
 body {
     font-family: 'Baloo Tamma 2','Manrope', cursive;
-    background-color:  RGB(218, 31%, 93%);
+   
 } 
 
 ::-webkit-scrollbar { width:8px; height: 10px; }  
@@ -12,17 +12,35 @@ body {
 a:hover { color: hsl(174, 84%, 52%); }
 
 
-/* CABEÇALHO */
+
+
 
 nav {
     display: flex;
     flex-direction: column;
     align-items: center;
     background: linear-gradient(#40E0D0,#48D1CC);
-    padding: 30px; 
+    padding: 20px; 
 }
 
-/* CONTATO */
+
+.sobre {
+    width: 100%;
+    padding: 50px;
+    margin-top: 50px;
+    position: relative;
+  }
+  .sobre p{
+      font-size: 18px;
+      margin-top: 60px;
+  }
+  .sobre h1{
+      text-align: center;
+  }
+  
+  
+
+
 #contato {
     background-color: #40E0D0;
     color: #E0FFFF;
@@ -47,42 +65,56 @@ nav {
     text-align: justify; 
 }
 
-footer {
-    background-color: #48D1CC;
-    color: #e5e6e7; 
+
+
+#hobby2 {
+    padding-top: 10px;
+  
+    
+  }
+  
+  .hobb2 {
+    margin-bottom: 25px;
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    color: #000000;
+    font-size: 16px;
+    
+  }
+  
+  
+  #hobby2 .img-responsive {
+    width: 100%;
+    text-align: center;
+    
+  }
+    
+
+#trabalhos{
+	margin: auto;
+	font-size: 20px;
+	width: 100%;
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 100px;
+  
+.footer .copyright p {
+    color: #ddd;
+    margin: 0;
+    
+  }
 }
-
-
-
-@media screen and (min-width: 768px) {
-    html { scroll-behavior: smooth; }
-    /* Cabeçalho */
-    nav {
-        height: 10vh;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    nav ul {
-        flex-direction: row;
-        width: 70%;
+    @media screen and (min-width: 768px) {
+    html { scroll-behavior: smooth;
     }
     
-    /* Header */
-    header {
-        height: 110vh;
-        justify-content: center;
-    }
-    /* Contato */
     #contato {
-        justify-content: space-around;   
+         
         flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        text-align: center;
-        padding: 0 auto;
-        max-height: 45vh;
-        margin: 0;         
+               
     }
- 
+
 }
- 
+
